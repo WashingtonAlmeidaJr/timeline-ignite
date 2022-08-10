@@ -1,0 +1,26 @@
+.wrapper{
+    max-width:70rem;
+    margin:2rem auto;
+    padding:0 1rem;
+    
+    display:grid;
+    grid-template-columns: 256px 1fr;
+    gap:2rem;
+    align-items: flex-start;
+    
+}
+
+@media (max-width:768px){
+
+/* a unidade rem da fonte acompanha 16px por padrão 
+do html(1rem=16px) esse valor pode ser alterado manualmente 
+com font-size*/
+
+html{
+font-size: 87,5%;
+}
+
+    .wrapper{
+        grid-template-columns: 1fr;
+}
+}
